@@ -2,6 +2,7 @@
 
 use Exception;
 
-class FileIsNoTCXFileException extends Exception {
+class FileIsNoTCXFileException extends Exception
+{
 
 }

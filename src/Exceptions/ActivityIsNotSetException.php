@@ -2,6 +2,7 @@
 
 use Exception;
 
-class ActivityIsNotSetException extends Exception {
+class ActivityIsNotSetException extends Exception
+{
 
 }

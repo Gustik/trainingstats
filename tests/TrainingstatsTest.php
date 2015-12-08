@@ -2,12 +2,13 @@
 
 use Trainingstats\Trainingstats;
 
-class TrainingstatsTest extends PHPUnit_Framework_TestCase {
+class TrainingstatsTest extends PHPUnit_Framework_TestCase
+{
 
-  public function testTrainingstatsIsPresent()
-  {
-    $stats = new Trainingstats();
-    $this->assertTrue($stats->isPresent());
-  }
+    public function testTrainingstatsIsPresent()
+    {
+        $stats = new Trainingstats();
+        $this->assertTrue($stats->isPresent());
+    }
 
 }
