@@ -1,7 +1,7 @@
 <?php namespace Trainingstats;
 
 class Point {
-  public $elevation;
+  public $altitude;
   public $distance;
   public $heartrate;
   public $latitude;
@@ -13,12 +13,12 @@ class Point {
     $this->time = new \DateTime();
   }
 
-  public function setElevation($elevation) {
-    $this->elevation = (int) $elevation;
+  public function setAltitude($altitude) {
+    $this->altitude = (int) $altitude;
   }
 
-  public function getElevation() {
-    return $this->elevation;
+  public function getAltitude() {
+    return $this->altitude;
   }
 
   public function setDistance($distance) {

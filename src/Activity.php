@@ -85,7 +85,7 @@ class Activity {
       return;
     }
     $point = new Point();
-    $point->setElevation((float) $trackpointNode->AltitudeMeters);
+    $point->setAltitude((float) $trackpointNode->AltitudeMeters);
     $point->setDistance((float) $trackpointNode->DistanceMeters);
     $point->setLatitude((float) $trackpointNode->Position->LatitudeDegrees);
     $point->setLongitude((float) $trackpointNode->Position->LongitudeDegrees);
