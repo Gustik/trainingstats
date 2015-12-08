@@ -39,9 +39,9 @@ class Activity {
    */
   public function __construct($activityNode) {
 
-    date_default_timezone_set('Europe/Berlin');
     $this->startTime = new \DateTime((string) $activityNode->Id);
 
+    $laps = [];
     foreach ($activityNode->Lap as $lapNode) {
       $laps[] = $this->parseLap($lapNode);
     }
@@ -112,6 +112,9 @@ class Activity {
     }
   }
 
+  /**
+   * @return Point[]
+   */
   public function getPoints() {
     return $this->points;
   }
@@ -127,10 +130,17 @@ class Activity {
     }
   }
 
+  /**
+   * @param $index
+   * @return Lap
+   */
   public function getLap($index) {
     return $this->laps[$index];
   }
 
+  /**
+   * @return Lap[]
+   */
   public function getLaps() {
     return $this->laps;
   }

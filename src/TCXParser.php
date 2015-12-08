@@ -32,6 +32,9 @@ class TCXParser {
     }
   }
 
+  /**
+   * @return Activity[]
+   */
   public function getActivities() {
     return $this->activities;
   }
